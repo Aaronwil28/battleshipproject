@@ -2,7 +2,7 @@
 var rows = 10;
 var cols = 10;
 var squareSize = 50;
-
+var fireTorpedo;
 // gets the container element
 var gameBoardContainer = document.getElementById("gameboard");
 
@@ -61,6 +61,9 @@ var gameBoard = [
 
 function fireTorpedo() {
 
+if (fireTorpedo) {
+
+}
 	// Your game logic will go here!
 
 }
