@@ -5,6 +5,8 @@ var squareSize = 50;
 var fireTorpedo;
 // gets the container element
 var gameBoardContainer = document.getElementById("gameboard");
+function fireTorpedoGuess() {
+  document.getElementById("fireTorpedoGuess").textContent = document.getElementById("exampleInput").value;
 
 // you can use this to convert your letters into numbers for use
 // with the 2D array
@@ -62,6 +64,7 @@ var gameBoard = [
 function fireTorpedo() {
 
 if (fireTorpedo) {
+	hits = value(1);
 
 }
 	// Your game logic will go here!
