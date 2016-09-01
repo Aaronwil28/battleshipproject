@@ -21,6 +21,8 @@ var letterConversion = {
 	"J": 9
 }
 
+var letterArray = ["a","b","c","d","e","f","g","h","i"];
+
 // makes the grid columns and rows
 for (i = 0; i < cols; i++) {
 	for (j = 0; j < rows; j++) {
@@ -34,6 +36,8 @@ for (i = 0; i < cols; i++) {
 		square.className = "boardSquare";
 
 		// THIS IS WHERE YOU WILL ADD CODE FOR PART 1 TO ADD TEXT TO EACH SQUARE ADDDD    TEXXXXXXXXTTT TO SQUAAAREEE
+
+		square.textContent = i + 1;
 
 
 
@@ -63,10 +67,16 @@ var gameBoard = [
 
 function fireTorpedo() {
 
+/*
 if (fireTorpedo) {
 	hits = value(1);
 
 }
 	// Your game logic will go here!
+void fireTorpedo(true) {
+	if (fireTorpedo = 17 hits)
+	 						text= ("You Have Sunk All battleships")							{
 
+	}
+} */
 }
