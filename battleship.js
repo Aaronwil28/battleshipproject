@@ -2,7 +2,7 @@
 var rows = 10;
 var cols = 10;
 var squareSize = 50;
-var fireTorpedo;
+
 // gets the container element
 var gameBoardContainer = document.getElementById("gameboard");
 
@@ -21,11 +21,11 @@ var letterConversion = {
 	"J": 9
 }
 
-var letterArray = ["a","b","c","d","e","f","g","h","i","j",];
-
 // makes the grid columns and rows
+var letterArray = ["A", "B", "C", "D", "E", "F", "G", "H", "I", "J"];
+
 for (i = 0; i < cols; i++) {
-		for (j = 0; j < rows; j++) {
+	for (j = 0; j < rows; j++) {
 
 		// creates a new div HTML element for each grid square and makes it the right size
 		var square = document.createElement("div");
@@ -35,10 +35,8 @@ for (i = 0; i < cols; i++) {
 		square.id = 's' + j + i;
 		square.className = "boardSquare";
 
-		// THIS IS WHERE YOU WILL ADD CODE FOR PART 1 TO ADD TEXT TO EACH SQUARE ADDDD    TEXXXXXXXXTTT TO SQUAAAREEE
-
-		square.textContent = letterArray[j] + (i + 1);
-
+		// THIS IS WHERE YOU WILL ADD CODE FOR PART 1 TO ADD TEXT TO EACH SQUARE
+		square.textContent = letterArray[j] + (i+1);
 
 
 		// set each grid square's coordinates: multiples of the current row or column number
@@ -65,18 +63,21 @@ var gameBoard = [
 				[1,0,0,0,0,0,0,0,0,0]
 				]
 
-function fireTorpedo() {
+				function fireTorpedo() {
+					var userInput = $("#userInput").val();
+					console.log("userInput is " + userInput);
+								var rowBeforeConversion = userInput.substring(0,1);
+											var  column = userInput.substring(1,3) - 1;
+												row = letterConversion[rowBeforeConversion];
 
-/*
-if (fireTorpedo) {
-	hits = value(1);
 
-}
-	// Your game logic will go here!
-void fireTorpedo(true) {
-	if (fireTorpedo = 17 hits)
-	 						text= ("You Have Sunk All battleships")							{
+				 var Userguess = gameBoard[row][column]
+				 var myDivString = "#s" + row + column;
 
-	}
-} */
-}
+				 	if(Userguess == 1) {
+				     $(myDivString).css("background-color", "red");
+									}
+											else {
+														$(myDivString).css("background-color", "grey");
+					}
+				}

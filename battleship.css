@@ -2,9 +2,13 @@ body {
     margin: 60px auto;
     width: 70%;
     max-width: 950px;
+       background-image: url("http://www.desktopimages.org/pictures/2012/0116/1/air-battle-airfight-dogfight-over-iowa-class-battleship-wallpaper-460715.jpg");
+        background-size: cover;
 }
 
+
 h1 {
+  
     font-size: 3em;
     font-family:'Helvetica', 'Arial', 'Sans-Serif';
 }
@@ -21,6 +25,7 @@ p, button, input {
 	margin:0 auto 2em auto;
 	width:500px;
 	height:500px;
+  border: black,thick;
 }
 
 #gameboard div {
@@ -44,4 +49,6 @@ p, button, input {
   position:relative;
   margin:0 auto 2em auto;
   width:500px;
+  color: red;
+  font-style: oblique;
 }
